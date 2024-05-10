@@ -38,10 +38,10 @@ const HeroSection = () => {
         </div>
 
         <p className="text-[#ADB7BE] text-base sm:text-lg my-7 ">
-          Hey, I'm Victor, a full-stack developer with around 2 years of
-          hands-on coding. I love building cool stuff on the web! Whether it's
-          crafting interactive interfaces or solving coding puzzles, I'm all in.
-          Let's create something awesome together!
+          Hey, I&apos;m Victor, a full-stack developer with around 2 years of
+          hands-on coding. I love building cool stuff on the web! Whether it&apos;s
+          crafting interactive interfaces or solving coding puzzles, I&apos;m all in.
+          Let&apos;s create something awesome together!
         </p>
 
         <div className="flex  items-center  gap-4 ">
