@@ -7,10 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        logo: ["Oleo Script", "system-ui"],
+        text: ["Quicksand", "sans-serif"],
+        text2: ["Vollkorn", "sans-serif"],
+        text3: ["Roboto Flex", "sans-serif"],
+        text5: ["Fuzzy Bubbles", "sans-serif"],
+        text4: ["Piazzolla", "serif"],
+        text: ["DM Sans", "sans-serif"],
+        textt: ["Special Elite", "system-ui"],
+      },
+      colors: {
+        neutralSilver: "#f5f7fA",
+        neutralDGray: "#4D4D4D",
+        brandPrimary: "#4CAF4F",
+        neutralGray: "#717171",
       },
     },
   },
