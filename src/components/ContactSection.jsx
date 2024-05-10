@@ -20,7 +20,7 @@ const ContactSection = () => {
         <div className="flex flex-col -center">
           <div className="flex flex-col">
             <p className="text-lg text-gray-600 mb-6">
-              Let's discuss your ideas in detail. Schedule a meeting at your
+              Let&apos;s discuss your ideas in detail. Schedule a meeting at your
               convenience.
             </p>
             <button
@@ -38,7 +38,7 @@ const ContactSection = () => {
           <p className="text-lg text-gray-600 mb-6">
             Ready to collaborate on something amazing? Got any questions or
             ideas? Feel free to shoot me an email or connect with me through my
-            social channels. I'd love to hear from you!
+            social channels. I&apos;d love to hear from you!
           </p>
         </div>
 
