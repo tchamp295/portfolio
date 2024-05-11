@@ -54,7 +54,7 @@ const HeroSection = () => {
             className="flex items-center  btn-primary"
           >
             send message
-            <ArrowUpRight className="text-white ml-2" />
+            
           </motion.button>
           
             <motion.button
