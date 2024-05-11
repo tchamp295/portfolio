@@ -37,7 +37,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <p className="text-[#ADB7BE] text-base sm:text-lg my-7 ">
+        <p className="text-sm md:text-base text-gray-600 my-7 ">
           Hey, I&apos;m Victor, a full-stack developer with around 2 years of
           hands-on coding. I love building cool stuff on the web! Whether it&apos;s
           crafting interactive interfaces or solving coding puzzles, I&apos;m all in.
@@ -53,7 +53,7 @@ const HeroSection = () => {
             }}
             className="flex items-center  btn-primary"
           >
-            Hire Me
+            send message
             <ArrowUpRight className="text-white ml-2" />
           </motion.button>
           
