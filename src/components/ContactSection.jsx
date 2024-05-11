@@ -66,7 +66,7 @@ const ContactSection = () => {
               type="submit"
               className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
             >
-              Sign In
+              Send Message
             </button>
           </form>
         </div>
@@ -76,7 +76,7 @@ const ContactSection = () => {
       </p>
       <button
         onClick={handleScheduleMeeting}
-        className="w-2/3 animate-pulse bg-transparent border border-indigo-600 text-indigo-600 font-bold py-2 px-4 rounded-md flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-105"
+        className=" w-full md:w-2/3 animate-pulse bg-transparent border border-indigo-600 text-indigo-600 font-bold py-2 px-4 rounded-md flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-105"
       >
         <FiCalendar className="mr-2" />
         Schedule Now
