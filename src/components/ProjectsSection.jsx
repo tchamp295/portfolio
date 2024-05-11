@@ -1,7 +1,7 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
+
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 
@@ -63,16 +63,12 @@ const projectsData = [
   },
 ];
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+ 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag) => {
-    setTag(newTag);
-  };
-  const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
-  );
+
+ 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
@@ -80,14 +76,15 @@ const ProjectsSection = () => {
   return (
     <div  className="pt-[10vh] w-full max-w-3xl mx-auto px-3">
       <div className=" flex  justify-between items-center my-7">
-        <h1 className=" font-bold font-textt  text-[18px]  ">
+        <h1 className=" font-bold font-textt text-[18px]  ">
           CURRENT PROJECTS
         </h1>
         <div className="">
 
-        <Link href={"#"} className="flex gap-2 items-center text-xs  ">
-          All Works <IoMdArrowDropright className="animate-pulse h-5 w-5"/>
-        </Link>
+      
+          <Link href="#" className="flex items-center text-sm text-gray-600 hover:text-indigo-600 transition duration-300">
+              All Works<IoMdArrowDropright className="h-5 w-5 ml-1" />
+          </Link>
         </div>
       </div>
       
