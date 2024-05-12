@@ -86,18 +86,31 @@ const Navbar = ({ openNavbar }) => {
             ))}
           </ul>
 
-          <Link className="hidden text-base md:text-lg text-gray-600 md:block" href={"/login"}>
+          <Link
+            className="hidden text-base md:text-lg text-gray-600 md:block"
+            href={"/login"}
+          >
             signIn
           </Link>
         </div>
-        <div className=" hidden md:flex gap-4 items-center">
-          <SocialLink
-            href="#"
-            icon={<FiLinkedin />}
-            className="text-blue-600"
-          />
-          <SocialLink href="#" icon={<SiGithub />} className="text-gray-600" />
-          <SocialLink href="#" icon={<SiUpwork />} className="text-green-600" />
+        <div className=" flex gap-4 items-center">
+          <div className="hidden md:flex gap-4">
+            <SocialLink
+              href="#"
+              icon={<FiLinkedin />}
+              className="text-blue-600"
+            />
+            <SocialLink
+              href="#"
+              icon={<SiGithub />}
+              className="text-gray-600"
+            />
+            <SocialLink
+              href="#"
+              icon={<SiUpwork />}
+              className="text-green-600"
+            />
+          </div>
           <RxHamburgerMenu
             onClick={openNavbar}
             className="h-10 w-10 md:hidden rotate-180"
