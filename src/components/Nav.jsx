@@ -54,8 +54,11 @@ const Navbar = ({ openNavbar }) => {
       className={` fixed font-text top-0 w-full  ${stickyStyle} transition-all font-text duration-300  z-[10002]  `}
     >
       <div className=" flex items-center h-[10vh] justify-between max-w-3xl  mx-auto p-3">
-        <div className=" flex items-center gap-4 ">
-          <Link href="/" className="flex items-center bg-gray-500 rounded-full">
+        <div className=" flex items-center gap-4  ">
+          <Link
+            href="/"
+            className="flex items-center bg-gray-200 rounded-full "
+          >
             <svg
               width="40"
               height="40"
@@ -67,7 +70,7 @@ const Navbar = ({ openNavbar }) => {
               <text
                 x="5"
                 y="28"
-                fontSize="20"
+                fontSize="18"
                 fontFamily="Arial"
                 fontWeight="bold"
               >
@@ -83,11 +86,11 @@ const Navbar = ({ openNavbar }) => {
             ))}
           </ul>
 
-          <Link className="hidden md:block" href={"/login"}>
-            sign in
+          <Link className="hidden text-base md:text-lg text-gray-600 md:block" href={"/login"}>
+            signIn
           </Link>
         </div>
-        <div className="flex gap-4 items-center">
+        <div className=" hidden md:flex gap-4 items-center">
           <SocialLink
             href="#"
             icon={<FiLinkedin />}

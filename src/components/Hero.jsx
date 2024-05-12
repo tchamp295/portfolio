@@ -37,7 +37,7 @@ const HeroSection = () => {
             height={100}
           />
           <div className=" flex flex-col ml-4 ">
-            <h1 className="text-3xl font-bold ">Victor Ndemo</h1>
+            <h1 className="text-lg md:text-3xl font-bold text-gray-600 ">Victor Ndemo</h1>
             <TypeEffect />
           </div>
         </div>
