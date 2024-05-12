@@ -32,9 +32,8 @@ const navLinks = [
   },
 ];
 
-const Navbar = ({ openNavbar }) => {
-  const [activeItem, setActiveItem] = useState("Home");
-  const [cartQuantity, setCartQuantity] = useState(10);
+const Navbar = ({ openNav }) => {
+  
   const [navSticky, setNavSticky] = useState(false);
   useEffect(() => {
     const handler = () => {
@@ -112,7 +111,7 @@ const Navbar = ({ openNavbar }) => {
             />
           </div>
           <RxHamburgerMenu
-            onClick={openNavbar}
+            onClick={openNav}
             className="h-10 w-10 md:hidden rotate-180"
           />
         </div>

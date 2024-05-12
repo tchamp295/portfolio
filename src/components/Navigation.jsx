@@ -1,7 +1,8 @@
 "use client"
-import React, { useState } from 'react';
+
 import NavMobile from '@/components/NavMobile';
 import Navbar from "@/components/Nav";
+import { useState } from 'react';
 
 
 const Navigation = () => {
