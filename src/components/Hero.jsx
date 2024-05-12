@@ -56,10 +56,10 @@ const HeroSection = () => {
               textShadow: "0px 0px 8px rgb(255,255,255)",
               boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}
-            className="flex items-center  btn-primary w-full"
+            className="flex items-center px-2 py-2   btn-primary w-full"
           >
             send message
-            <IoMailOutline className="text-white ml-2 text-2xl" />
+            <IoMailOutline className="text-white ml-1 text-2xl" />
           </motion.button>
 
           <motion.button
@@ -68,15 +68,15 @@ const HeroSection = () => {
               textShadow: "0px 0px 8px rgb(255,255,255)",
               boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}
-            className="w-full "
+            className="w-full"
           >
             <Link
               href="/Victor_s_Resume.pdf"
               download="cv"
-              className="flex items-center   btn-primary "
+              className="flex items-center  px-2 py-2  btn-primary "
             >
               Download CV
-              <IoDownloadOutline className="text-white ml-2 text-2xl" />
+              <IoDownloadOutline className="text-white ml-1 text-2xl" />
             </Link>
           </motion.button>
         </div>
