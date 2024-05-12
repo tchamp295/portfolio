@@ -60,7 +60,7 @@ const NavMobile = ({ closeNav, showNav }) => {
         </li>
         <li className="ml-5  ">
           <Link
-            href={"#"}
+            href={"/about"}
             className=" text-slate-300 hover:text-blue-500 cursor-pointer "
           >
             about
@@ -107,12 +107,12 @@ const NavMobile = ({ closeNav, showNav }) => {
             className="text-green-500"
           />
           <SocialLink
-            href="#"
+            href="https://www.linkedin.com/in/victor-ndemo/"
             icon={<FiLinkedin />}
             className="text-slate-500"
           />
           <SocialLink
-            href="#"
+            href="https://github.com/tchamp295/"
             icon={<SiGithub />}
             className="text-slate-400 
           "

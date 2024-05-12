@@ -25,13 +25,13 @@
     @apply text-inherit no-underline;
   }
   .nav_link {
-    @apply relative text-base md:text-lg  font-medium w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-500 text-[#49557e] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right;
+    @apply relative text-base md:text-lg items-center font-medium w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-500 text-[#49557e] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right;
   }
   input {
     @apply border border-gray-200 p-3 bg-zinc-100/40 rounded-lg;
   }
   .btn-primary {
-    @apply px-4 py-2  bg-gradient-to-r from-purple-500 to-indigo-500  text-white rounded hover:bg-neutralDGray;
+    @apply px-4 py-2 gap-2 justify-center  bg-gradient-to-r from-purple-500 to-indigo-500  text-white rounded hover:bg-neutralDGray;
   }
   .custom_bg {
     clip-path: polygon(0 0, 100% 1%, 100% 96%, 0 100%);

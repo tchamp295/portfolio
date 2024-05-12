@@ -20,7 +20,7 @@ const projectsData = [
     id: 2,
     title: "Potography Portfolio Website",
     description: "Website for The Saints Gathering Church with exciting features like downloadable sermons and devotionals. ",
-    image: "/images/projects/2.png",
+    image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -74,7 +74,7 @@ const ProjectsSection = () => {
     animate: { y: 0, opacity: 1 },
   };
   return (
-    <div  className="pt-[10vh] w-full max-w-3xl mx-auto px-3">
+    <div  className="pt-[10vh]  w-full max-w-3xl mx-auto px-3">
       <div className=" flex  justify-between items-center my-7">
         <h1 className=" font-bold font-textt text-[18px]  ">
           CURRENT PROJECTS
@@ -88,7 +88,7 @@ const ProjectsSection = () => {
         </div>
       </div>
       
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
         { projectsData.map((project, index) => (
           <motion.li
             key={index}

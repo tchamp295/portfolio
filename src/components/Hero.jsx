@@ -10,7 +10,7 @@ import TypeEffect from "./hepler/TypeWriter";
 import Marquee from "react-fast-marquee";
 import IconList from "./IconList";
 import {
-  IoArrowUpOutline,
+ 
   IoDownloadOutline,
   IoMailOutline,
 } from "react-icons/io5";
@@ -37,7 +37,9 @@ const HeroSection = () => {
             height={100}
           />
           <div className=" flex flex-col ml-4 ">
-            <h1 className="text-lg md:text-3xl font-bold text-gray-600 ">Victor Ndemo</h1>
+            <h1 className="text-lg md:text-3xl font-bold text-gray-600 ">
+              Victor Ndemo
+            </h1>
             <TypeEffect />
           </div>
         </div>
@@ -56,10 +58,10 @@ const HeroSection = () => {
               textShadow: "0px 0px 8px rgb(255,255,255)",
               boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}
-            className="flex items-center px-2 py-2   btn-primary w-full"
+            className="flex   btn-primary w-full"
           >
             send message
-            <IoMailOutline className="text-white ml-1 text-2xl" />
+            <IoMailOutline className="text-white  text-2xl" />
           </motion.button>
 
           <motion.button
@@ -68,22 +70,22 @@ const HeroSection = () => {
               textShadow: "0px 0px 8px rgb(255,255,255)",
               boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}
-            className="w-full"
+            className="w-full "
           >
             <Link
               href="/Victor_s_Resume.pdf"
               download="cv"
-              className="flex items-center  px-2 py-2  btn-primary "
+              className="flex    btn-primary "
             >
               Download CV
-              <IoDownloadOutline className="text-white ml-1 text-2xl" />
+              <IoDownloadOutline className="text-white  text-2xl" />
             </Link>
           </motion.button>
         </div>
-        <div className=" my-7 ">
+        <div className=" my-7  ">
           <h1 className="mb-5">Technologies</h1>
           <Marquee
-            className=""
+            className="ml-5 space-x-6"
             speed={50}
             direction="left"
             autoFill={true}
