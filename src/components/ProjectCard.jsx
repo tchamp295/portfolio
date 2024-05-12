@@ -32,9 +32,9 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, stacks })
         <span>{ stacks}</span>
       </div>
       <div className="flex gap-6">
-        <Link className="p-1 border-2 rounded-lg" href="#">
+        <Link className="px-3 py-1 border-2 rounded-lg" href="#">
           <AiOutlineEye className="inline-block mr-1" />
-          View Project
+          Live
         </Link>
         <Link className="p-1 border-2 rounded-lg" href={gitUrl}>
           <FaGithub className="inline-block mr-1" />

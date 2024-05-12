@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef, useState, useTransition } from "react";
-import TabButton from "./TabButton";
-import TabContent from "./TabContent";
+
 import { FaNode, FaReact } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiRedux, SiTypescript } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -59,8 +58,8 @@ const About = () => {
   return (
     <div className="pt-[10vh] w-full min-h-screen max-w-3xl mx-auto px-3">
       <div className="flex justify-between items-center my-7">
-        <h2 className="font-bold text-[16px] font-textt">
-          MERN Stack Proficiency
+        <h2 className="text-lg md:text-3xl font-bold text-gray-600 ">
+          Skills & Expertise
         </h2>
         <div>
           <Link href={"#"} className="flex gap-2 items-center text-xs">

@@ -83,9 +83,9 @@ const HeroSection = () => {
           </motion.button>
         </div>
         <div className=" my-7  ">
-          <h1 className="mb-5">Technologies</h1>
+          <h1 className="mb-5 text-lg italic font-semibold text-slate-400">Featured Technologies</h1>
           <Marquee
-            className="ml-5 space-x-6"
+            className=" "
             speed={50}
             direction="left"
             autoFill={true}
