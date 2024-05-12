@@ -2,6 +2,9 @@ import Link from "next/link";
 import { RiCloseFill } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import Image from "next/image";
+import { SiGithub, SiUpwork } from "react-icons/si";
+import SocialLink from "./SocialLinks";
+import { FiLinkedin } from "react-icons/fi";
 const NavMobile = ({ closeNav, showNav }) => {
   const NavOpenStyles = showNav ? "translate-x-0" : "translate-x-[-100%]";
   return (
@@ -48,10 +51,9 @@ const NavMobile = ({ closeNav, showNav }) => {
 
         <li className="ml-5 ">
           <Link
-            href={"#"}
+            href={"/"}
             className=" text-slate-300 cursor-pointer hover:text-blue-500"
           >
-           
             Home
           </Link>
         </li>
@@ -60,26 +62,24 @@ const NavMobile = ({ closeNav, showNav }) => {
             href={"#"}
             className=" text-slate-300 hover:text-blue-500 cursor-pointer "
           >
-           
-            obituaries
+           about
           </Link>
         </li>
         <li className="ml-5 ">
           <Link
-            href={"#"}
+            href={"/work"}
             className=" text-slate-300 cursor-pointer hover:text-blue-500"
           >
-           
-            Contact
+          work
           </Link>
         </li>
         <li className="ml-5 ">
           <Link
-            href={"#"}
+            href={"/contact"}
             className=" text-slate-300 cursor-pointer hover:text-blue-500 "
           >
             {" "}
-            About
+          contact
           </Link>
         </li>
 
@@ -99,7 +99,15 @@ const NavMobile = ({ closeNav, showNav }) => {
             </Link>
           </div>
         </div>
-
+        <div className="flex mt-4 justify-center space-x-4">
+          <SocialLink
+            href="#"
+            icon={<FiLinkedin />}
+            className="text-blue-500"
+          />
+          <SocialLink href="#" icon={<SiGithub />} className="text-gray-700" />
+          <SocialLink href="#" icon={<SiUpwork />} className="text-green-500" />
+        </div>
         <RiCloseFill
           onClick={closeNav}
           className="absolute top-[-1.3rem] right-[1.4rem] w-[2.3rem] h-[2.3rem] text-slate-300"
