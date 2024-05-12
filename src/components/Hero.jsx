@@ -9,6 +9,11 @@ import { IoMdContact, IoMdDownload } from "react-icons/io";
 import TypeEffect from "./hepler/TypeWriter";
 import Marquee from "react-fast-marquee";
 import IconList from "./IconList";
+import {
+  IoArrowUpOutline,
+  IoDownloadOutline,
+  IoMailOutline,
+} from "react-icons/io5";
 const HeroSection = () => {
   return (
     <div className="px-3 pt-[10vh] flex justify-center items-center h-screen font-text ">
@@ -54,7 +59,7 @@ const HeroSection = () => {
             className="flex items-center  btn-primary w-full"
           >
             send message
-            <ArrowUpRight className="text-white ml-2" />
+            <IoMailOutline className="text-white ml-2 text-2xl" />
           </motion.button>
 
           <motion.button
@@ -63,7 +68,7 @@ const HeroSection = () => {
               textShadow: "0px 0px 8px rgb(255,255,255)",
               boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}
-            className="w-full"
+            className="w-full "
           >
             <Link
               href="/Victor_s_Resume.pdf"
@@ -71,7 +76,7 @@ const HeroSection = () => {
               className="flex items-center   btn-primary "
             >
               Download CV
-              <IoMdDownload className="text-white ml-2" />
+              <IoDownloadOutline className="text-white ml-2 text-2xl" />
             </Link>
           </motion.button>
         </div>
