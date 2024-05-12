@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { RiCloseFill } from "react-icons/ri";
-import { BsWhatsapp } from "react-icons/bs";
-import Image from "next/image";
+
 import { SiGithub, SiUpwork } from "react-icons/si";
 import SocialLink from "./SocialLinks";
 import { FiLinkedin } from "react-icons/fi";
+import TypeEffect from "./hepler/TypeWriter";
+import { FaWhatsapp } from "react-icons/fa";
 const NavMobile = ({ closeNav, showNav }) => {
   const NavOpenStyles = showNav ? "translate-x-0" : "translate-x-[-100%]";
   return (
@@ -18,7 +19,7 @@ const NavMobile = ({ closeNav, showNav }) => {
       >
         <div className="font-bold text-3xl text-orange-500 flex items-center border-b border-gray-600 py-4">
           <Link href={"/"} className="flex items-center cursor-pointer">
-            <div className="bg-gradient-to-r from-purple-500 to-blue-500 text-white p-3 rounded-full mr-3">
+            <div className="bg-gray-200 text-white p-2 rounded-full mr-3">
               <svg
                 width="40"
                 height="40"
@@ -39,11 +40,11 @@ const NavMobile = ({ closeNav, showNav }) => {
               </svg>
             </div>
             <div>
-              <span className=" text-slate-500 uppercase font-extrabold hover:text-purple-500 transition duration-300">
-                victor
+              <span className="text-lg md:text-3xl text-slate-500 uppercase font-extrabold hover:text-purple-500 transition duration-300">
+                victor Ndemo
               </span>
-              <p className=" italic text-[10px] text-slate-300 -mt-3  ml">
-                Ndemo
+              <p className=" italic -mt-3  text-center">
+                <TypeEffect />
               </p>
             </div>
           </Link>
@@ -62,7 +63,7 @@ const NavMobile = ({ closeNav, showNav }) => {
             href={"#"}
             className=" text-slate-300 hover:text-blue-500 cursor-pointer "
           >
-           about
+            about
           </Link>
         </li>
         <li className="ml-5 ">
@@ -70,7 +71,7 @@ const NavMobile = ({ closeNav, showNav }) => {
             href={"/work"}
             className=" text-slate-300 cursor-pointer hover:text-blue-500"
           >
-          work
+            work
           </Link>
         </li>
         <li className="ml-5 ">
@@ -79,33 +80,43 @@ const NavMobile = ({ closeNav, showNav }) => {
             className=" text-slate-300 cursor-pointer hover:text-blue-500 "
           >
             {" "}
-          contact
+            contact
           </Link>
         </li>
 
         <div className="border-b p-3 border-gray-600">
           <div className="flex gap-5 items-center ">
             <Link
-              className="text-white bg-blue-500 rounded-md py-1 px-6 cursor-pointer"
+              className="text-white bg-gradient-to-r from-indigo-500 to-purple-500 rounded-md py-1 px-6 cursor-pointer"
               href="/login"
             >
               Login
             </Link>
             <Link
-              className="text-white bg-blue-500 rounded-md py-1 px-6 cursor-pointer"
+              className="text-white bg-gradient-to-r from-indigo-500 to-purple-500 rounded-md py-1 px-6 cursor-pointer"
               href="/register"
             >
               Sign up
             </Link>
           </div>
         </div>
-        <div className="flex mt-4 justify-center space-x-4">
+        <div className="flex mt-4 justify-center space-x-6">
+          <SocialLink
+            href="#"
+            icon={<FaWhatsapp />}
+            className="text-green-500"
+          />
           <SocialLink
             href="#"
             icon={<FiLinkedin />}
-            className="text-blue-500"
+            className="text-slate-500"
           />
-          <SocialLink href="#" icon={<SiGithub />} className="text-gray-700" />
+          <SocialLink
+            href="#"
+            icon={<SiGithub />}
+            className="text-slate-400 
+          "
+          />
           <SocialLink href="#" icon={<SiUpwork />} className="text-green-500" />
         </div>
         <RiCloseFill
