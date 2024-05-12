@@ -75,7 +75,7 @@ const HeroSection = () => {
             <Link
               href="/Victor_s_Resume.pdf"
               download="cv"
-              className="flex    btn-primary "
+              className="flex    btn-primary  "
             >
               Download CV
               <IoDownloadOutline className="text-white  text-2xl" />

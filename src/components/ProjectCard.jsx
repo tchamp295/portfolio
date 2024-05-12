@@ -1,6 +1,8 @@
 import React from "react";
 
 import Link from "next/link";
+import { AiOutlineEye } from "react-icons/ai";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, stacks }) => {
   return (
@@ -30,8 +32,14 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, stacks })
         <span>{ stacks}</span>
       </div>
       <div className="flex gap-6">
-        <Link className="p-1 border-2 rounded-lg" href={""}>View Project</Link>
-        <Link className=" p-1 border-2 rounded-lg" href={""}>Github</Link>
+        <Link className="p-1 border-2 rounded-lg" href="#">
+          <AiOutlineEye className="inline-block mr-1" />
+          View Project
+        </Link>
+        <Link className="p-1 border-2 rounded-lg" href={gitUrl}>
+          <FaGithub className="inline-block mr-1" />
+          GitHub
+        </Link>
       </div>
     </div>
   );

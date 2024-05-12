@@ -31,7 +31,7 @@
     @apply border border-gray-200 p-3 bg-zinc-100/40 rounded-lg;
   }
   .btn-primary {
-    @apply px-4 py-2 gap-2 justify-center  bg-gradient-to-r from-purple-500 to-indigo-500  text-white rounded hover:bg-neutralDGray;
+    @apply px-2 py-2 gap-2 justify-center  bg-gradient-to-r from-purple-500 to-indigo-500  text-white rounded hover:bg-neutralDGray;
   }
   .custom_bg {
     clip-path: polygon(0 0, 100% 1%, 100% 96%, 0 100%);
