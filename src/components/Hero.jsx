@@ -39,41 +39,41 @@ const HeroSection = () => {
 
         <p className="text-base md:text-lg text-gray-600 my-7 ">
           Hey, I&apos;m Victor, a full-stack developer with around 2 years of
-          hands-on coding. I love building cool stuff on the web! Whether it&apos;s
-          crafting interactive interfaces or solving coding puzzles, I&apos;m all in.
-          Let&apos;s create something awesome together!
+          hands-on coding. I love building cool stuff on the web! Whether
+          it&apos;s crafting interactive interfaces or solving coding puzzles,
+          I&apos;m all in. Let&apos;s create something awesome together!
         </p>
 
-        <div className="flex  items-center  gap-4 ">
+        <div className="flex  items-center  gap-4 w-full  md:w-2/4">
           <motion.button
             whileHover={{
               scale: 1.1,
               textShadow: "0px 0px 8px rgb(255,255,255)",
               boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}
-            className="flex items-center  btn-primary"
+            className="flex items-center  btn-primary w-full"
           >
             send message
-            
+            <ArrowUpRight className="text-white ml-2" />
           </motion.button>
-          
-            <motion.button
-              whileHover={{
-                scale: 1.1,
-                textShadow: "0px 0px 8px rgb(255,255,255)",
-                boxShadow: "0px 0px 8px rgb(255,255,255)",
-              }}
+
+          <motion.button
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255,255,255)",
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
+            className="w-full"
           >
             <Link
               href="/Victor_s_Resume.pdf"
               download="cv"
-              className="flex items-center   btn-primary"
+              className="flex items-center   btn-primary "
             >
               Download CV
               <IoMdDownload className="text-white ml-2" />
             </Link>
-            </motion.button>
-          
+          </motion.button>
         </div>
         <div className=" my-7 ">
           <h1 className="mb-5">Technologies</h1>
