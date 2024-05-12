@@ -56,21 +56,21 @@ const About = () => {
     animate: { y: 0, opacity: 1 },
   };
   return (
-    <div className="pt-[10vh] w-full min-h-screen max-w-3xl mx-auto px-3">
-      <div className="flex justify-between items-center my-7">
+    <div className=" w-full  max-w-3xl mx-auto px-3 py-7 ">
+      <div className="flex justify-between items-center mb-7">
         <h2 className="text-lg md:text-3xl font-bold text-gray-600 ">
           Skills & Expertise
         </h2>
-        <div>
+        {/* <div>
           <Link href={"#"} className="flex gap-2 items-center text-xs">
             <IoMdArrowDropright className="animate-pulse h-5 w-5" />
           </Link>
-        </div>
+        </div> */}
       </div>
 
       <div
         ref={ref}
-        className="flex flex-wrap gap-20 items-center "
+        className="flex flex-wrap gap-20 items-center  "
       >
         {DATA.map((item, index) => (
           <motion.div

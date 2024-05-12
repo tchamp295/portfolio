@@ -3,7 +3,10 @@ import About from '@/components/About'
 
 const AboutPage = () => {
   return (
-    <About/>
+    <div className=" pt-[10vh] min-h-screen mt-9">
+
+      <About/>
+    </div>
   )
 }
 

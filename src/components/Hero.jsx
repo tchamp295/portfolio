@@ -16,7 +16,7 @@ import {
 } from "react-icons/io5";
 const HeroSection = () => {
   return (
-    <div className="px-3 pt-[10vh] flex justify-center items-center h-screen font-text ">
+    <div className="px-3 pt-[10vh] flex justify-center items-center   font-text  ">
       <motion.div
         initial={{ x: "-100vw" }}
         animate={{ x: 0 }}
@@ -26,7 +26,7 @@ const HeroSection = () => {
           stiffness: 120,
           duration: 2.5,
         }}
-        className="w-full max-w-3xl mx-auto "
+        className="w-full max-w-3xl mx-auto my-9  py-7  "
       >
         <div className="flex items-center  ">
           <Image
@@ -82,7 +82,7 @@ const HeroSection = () => {
             </Link>
           </motion.button>
         </div>
-        <div className=" my-7  ">
+        <div className=" mt-7  ">
           <h1 className="mb-5 text-lg italic font-semibold text-slate-400">Featured Technologies</h1>
           <Marquee
             className=" "

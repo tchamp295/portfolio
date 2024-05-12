@@ -74,16 +74,16 @@ const ProjectsSection = () => {
     animate: { y: 0, opacity: 1 },
   };
   return (
-    <div  className="pt-[10vh]  w-full max-w-3xl mx-auto px-3">
-      <div className=" flex  justify-between items-center my-7">
-        <h1 className=" font-bold font-textt text-[18px]  ">
-          CURRENT PROJECTS
+    <div  className="  w-full max-w-3xl mx-auto px-3 py-7 my-9   ">
+      <div className=" flex  justify-between items-center mb-7">
+        <h1 className=" text-lg md:text-3xl font-bold text-gray-600 ">
+               Featured Projects
         </h1>
         <div className="">
 
       
           <Link href="#" className="flex items-center text-sm text-gray-600 hover:text-indigo-600 transition duration-300">
-              All Works<IoMdArrowDropright className="h-5 w-5 ml-1" />
+              Explore More<IoMdArrowDropright className="h-5 w-5 ml-1" />
           </Link>
         </div>
       </div>

@@ -15,9 +15,9 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="pt-[10vh] w-full min-h-screen max-w-3xl mx-auto px-3">
+    <div className="w-full  max-w-3xl mx-auto px-3 py-7  mb-9">
       <div className=" my-7">
-        <h2 className="text-lg md:text-3xl font-bold text-gray-800 mb-4">
+        <h2 className="text-lg md:text-3xl font-bold text-gray-600 mb-4">
           Get in Touch!
         </h2>
         <p className="text-sm md:text-base text-gray-600 mb-6">

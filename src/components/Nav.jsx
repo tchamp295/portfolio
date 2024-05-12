@@ -15,10 +15,6 @@ const variants = {
 };
 const navLinks = [
   {
-    title: "home",
-    path: "/",
-  },
-  {
     title: "about",
     path: "/about",
   },
@@ -27,13 +23,16 @@ const navLinks = [
     path: "/work",
   },
   {
+    title: "blog",
+    path: "/blog",
+  },
+  {
     title: "contact",
     path: "/contact",
   },
 ];
 
 const Navbar = ({ openNav }) => {
-  
   const [navSticky, setNavSticky] = useState(false);
   useEffect(() => {
     const handler = () => {

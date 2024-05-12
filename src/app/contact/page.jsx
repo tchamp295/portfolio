@@ -1,9 +1,11 @@
-import ContactSection from '@/components/ContactSection'
+import ContactSection from "@/components/ContactSection";
 
 const ContactPage = () => {
   return (
-    <ContactSection/>
-  )
-}
+    <div className="pt-[10vh] min-h-screen ">
+      <ContactSection />
+    </div>
+  );
+};
 
-export default ContactPage
+export default ContactPage;
