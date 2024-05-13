@@ -1,14 +1,15 @@
 "use client";
-import React, { useRef, useState, useTransition } from "react";
+import React, { useRef } from "react";
 
 import { FaNode, FaReact } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiRedux, SiTypescript } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { LiaFigma } from "react-icons/lia";
+import { BiLogoTailwindCss } from "react-icons/bi";
 import SkillCard from "./SkillCard";
-import { color, motion, useInView } from "framer-motion";
-
-import { IoMdArrowDropright } from "react-icons/io";
-import Link from "next/link";
+import { motion, useInView } from "framer-motion";
+import { RiJavascriptFill } from "react-icons/ri";
+import { IoLogoHtml5 } from "react-icons/io5";
 
 const DATA = [
   {
@@ -17,24 +18,29 @@ const DATA = [
     iconColor: "#007ACC", // Example color for TypeScript
   },
   {
-    name: "Node.js",
-    img: <FaNode />,
-    iconColor: "#8CC84B", // Example color for Node.js
+    name: "JavaScript",
+    img: <RiJavascriptFill />,
+    iconColor: "#F0DB4F", // Example color for JavaScript (updated to yellow)
   },
   {
-    name: "React.js",
+    name: "Node Js",
+    img: <FaNode />,
+    iconColor: "#68A063", // Example color for Node.js (updated to green)
+  },
+  {
+    name: "React Js",
     img: <FaReact />,
     iconColor: "#61DAFB", // Example color for React.js
   },
   {
-    name: "MongoDB",
-    img: <SiMongodb />,
-    iconColor: "#4DB33D", // Example color for MongoDB
+    name: "HTML5",
+    img: <IoLogoHtml5 />,
+    iconColor: "#E34F26", // Example color for HTML5 (updated to orange)
   },
   {
-    name: "Express.js",
+    name: "Express Js",
     img: <SiExpress />,
-    iconColor: "#000000", // Example color for Express.js
+    iconColor: "#000000", // Example color for Express.js (black)
   },
   {
     name: "Redux",
@@ -42,9 +48,24 @@ const DATA = [
     iconColor: "#764ABC", // Example color for Redux
   },
   {
-    name: "Next.js",
+    name: "Next Js",
     img: <TbBrandNextjs />,
-    iconColor: "#000000", // Example color for Next.js
+    iconColor: "#000000", // Example color for Next.js (black)
+  },
+  {
+    name: "Tailwind",
+    img: <BiLogoTailwindCss />,
+    iconColor: "#06B6D4", // Example color for Tailwind CSS (updated to cyan)
+  },
+  {
+    name: "MongoDB",
+    img: <SiMongodb />,
+    iconColor: "#4DB33D", // Example color for MongoDB
+  },
+  {
+    name: "Figma",
+    img: <LiaFigma />,
+    iconColor: "#F24E1E", // Example color for Figma (updated to red)
   },
 ];
 const About = () => {
@@ -57,20 +78,18 @@ const About = () => {
   };
   return (
     <div className=" w-full  max-w-3xl mx-auto px-3 py-7 my-9 ">
-      <div className="flex justify-between items-center mb-7">
+      <div className="flex flex-col  mb-7">
         <h2 className="text-lg md:text-3xl font-bold text-gray-600 ">
           Skills & Expertise
         </h2>
-        {/* <div>
-          <Link href={"#"} className="flex gap-2 items-center text-xs">
-            <IoMdArrowDropright className="animate-pulse h-5 w-5" />
-          </Link>
-        </div> */}
+        <p className="text-sm md:text-base text-gray-500 mt-2 md:mt-2">
+          Here are some of my skills and expertise in various technologies.
+        </p>
       </div>
 
       <div
         ref={ref}
-        className="flex flex-wrap gap-20 items-center  "
+        className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 "
       >
         {DATA.map((item, index) => (
           <motion.div
@@ -80,7 +99,11 @@ const About = () => {
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >
-            <SkillCard name={item.name} icon={item.img} iconColor={item.iconColor}/>
+            <SkillCard
+              name={item.name}
+              icon={item.img}
+              iconColor={item.iconColor}
+            />
           </motion.div>
         ))}
       </div>

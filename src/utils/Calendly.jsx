@@ -31,7 +31,12 @@ const Calendly = ({handleCloseCalendly}) => {
           url="https://calendly.com/speedsys530/30min"
           styles={{ width: "100%", height: "100%", position: "relative" }}
         />
-      </div>
+      </div> <ul className="list-disc pl-6 mt-3 text-sm md:text-base text-gray-600">
+          <li>Web Development</li>
+          <li>Mobile App Development</li>
+          <li>UI/UX Design</li>
+          <li>Consultation</li>
+        </ul>
     </div>
   );
 };
