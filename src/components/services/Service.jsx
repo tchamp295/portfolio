@@ -1,3 +1,5 @@
+import ServiceCard from "./ServiceCard";
+
 const Service = () => {
   return (
     <div className="w-full max-w-3xl mx-auto px-3 py-7 mb-9">
@@ -7,7 +9,7 @@ const Service = () => {
         </h2>
         <p className="text-sm md:text-base text-gray-600 mb-6">
           {" "}
-          Ready to turn your ideas into reality? Let's work together to bring
+          Ready to turn your ideas into reality? Let&apos;s work together to bring
           your projects to life.
         </p>
       </div>
@@ -18,7 +20,7 @@ const Service = () => {
         <p className="text-sm md:text-base text-gray-600">
           Here are some of the services I offer:
         </p>
-       
+       <ServiceCard/>
       </div>
     </div>
   );
