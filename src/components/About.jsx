@@ -79,17 +79,17 @@ const About = () => {
   return (
     <div className=" w-full  max-w-3xl mx-auto px-3 py-7 my-9 ">
       <div className="flex flex-col  mb-7">
-        <h2 className="text-lg md:text-3xl font-bold text-gray-600 ">
+        <h2 className="text-lg md:text-3xl font-bold text-gray-600 mb-4 ">
           Skills & Expertise
         </h2>
-        <p className="text-sm md:text-base text-gray-500 mt-2 md:mt-2">
+        <p className="text-sm md:text-base text-gray-500 mb-6">
           Here are some of my skills and expertise in various technologies.
         </p>
       </div>
 
       <div
         ref={ref}
-        className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 "
+        className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 border-t border-gray-300 pt-6 "
       >
         {DATA.map((item, index) => (
           <motion.div

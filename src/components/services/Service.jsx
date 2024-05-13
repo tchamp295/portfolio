@@ -8,7 +8,7 @@ const Service = () => {
           Discover What I Offer
         </h2>
         <p className="text-sm md:text-base text-gray-600 mb-6">
-          {" "}
+          
           Ready to turn your ideas into reality? Let&apos;s work together to bring
           your projects to life.
         </p>
@@ -17,7 +17,7 @@ const Service = () => {
       {/* Add your services section below */}
       <div className="border-t border-gray-300 pt-6">
         
-        <p className="text-sm md:text-base text-gray-600">
+        <p className="text-sm md:text-base text-gray-600 mb-4">
           Here are some of the services I offer:
         </p>
        <ServiceCard/>
