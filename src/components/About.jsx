@@ -82,7 +82,7 @@ const About = () => {
         <h2 className="text-lg md:text-3xl font-bold text-gray-600 mb-4 ">
           Skills & Expertise
         </h2>
-        <p className="text-sm md:text-base text-gray-600 mb-6">
+        <p className="text-sm md:text-base text-gray-600 ">
           Here are some of my skills and expertise in various technologies.
         </p>
       </div>
