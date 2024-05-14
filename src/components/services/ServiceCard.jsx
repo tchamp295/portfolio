@@ -1,11 +1,14 @@
-import Image from "next/image";
-
-const ServiceCard = ({ imgUrl, desc }) => {
+const ServiceCard = ({ imgUrl, title, desc, iconColor }) => {
   return (
-    <div className="flex flex-col justify-between gap-4 w-full">
-      <div className="flex-none h-36  w-full md:w-full md:h-42 rounded-t-xl bg-gray-100">
-        <Image src={imgUrl} height={10} width={20} alt="service " />
-        <p>{desc}</p>
+    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+      <div className="p-6">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4">
+          <span className="text-3xl" style={{ color: iconColor }}>
+            {imgUrl}
+          </span>
+        </div>
+        <h1 className="text-xl font-bold text-gray-600 mb-2">{title}</h1>
+        <p className="text-sm text-gray-600">{desc}</p>
       </div>
     </div>
   );
