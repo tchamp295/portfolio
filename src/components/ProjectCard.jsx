@@ -39,8 +39,8 @@ const ProjectCard = ({
           <FaCode className="text-indigo-500 mr-1" /> 
           <div className="text-slate-400 font-textt font-semibold text-sm">{stacks.join(", ")}</div>
         </div>
-        <p className="text-[#ADB7BE] text-sm">{description}</p>
-        <Link className="flex items-center text-indigo-500 hover:text-indigo-700 transition-colors duration-300" href={"/work/1"}>
+        <p className="text-[#ADB7BE] text-sm md:text-lg line-clamp-2">{description}</p>
+        <Link className="flex items-center mt-2 text-indigo-500 hover:text-indigo-700 transition-colors duration-300" href={"/work/1"}>
          Learn more... <FaAngleRight className="ml-1" />
         </Link>
       </div>
