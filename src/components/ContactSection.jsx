@@ -20,7 +20,7 @@ const ContactSection = () => {
         <h2 className="text-lg md:text-3xl font-bold text-gray-600 mb-4">
           Get in Touch!
         </h2>
-        <p className="text-sm md:text-base text-gray-600 mb-6">
+        <p className="text-base md:text-lg text-gray-600 mb-6">
           Have a project in mind or just want to chat? Drop me a message below.
         </p>
       </div>
@@ -28,33 +28,33 @@ const ContactSection = () => {
         <div className="">
           <form>
             <div className="mb-4">
-              <span className="block  font-medium text-sm md:text-base text-gray-600">
+              <span className="block  font-medium text-base md:text-lg text-gray-600">
                 Name
               </span>
               <input
                 type="name"
                 id="name"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-base"
                 placeholder="Enter your name"
               />
             </div>
             <div className="mb-4">
-              <span className="block  font-medium text-sm md:text-base text-gray-600">
+              <span className="block  font-medium text-base md:text-lg text-gray-600">
                 Email
               </span>
               <input
                 type="email"
                 id="email"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base"
                 placeholder="Enter your email"
               />
             </div>
             <div className="mb-6">
-              <span className="block  font-medium text-sm md:text-base text-gray-600">
+              <span className="block  font-medium text-base md:text-lg text-gray-600">
                 Subject
               </span>
               <textarea
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base"
                 name="message"
                 id="message"
                 rows={5}
@@ -71,7 +71,7 @@ const ContactSection = () => {
           </form>
         </div>
         <div className="flex flex-col">
-          <div className="pl-6 mb-3 text-sm md:text-base text-gray-600">
+          <div className="pl-6 mb-3 text-base md:text-lg text-gray-600">
             
             <div className="flex items-center mb-2">
               <FiCheckCircle className="text-indigo-600 mr-2" />
@@ -98,7 +98,7 @@ const ContactSection = () => {
               <span>Consultation</span>
             </div>
           </div>
-          <p className="text-sm md:text-base text-gray-600 mb-6">
+          <p className="text-base md:text-lg text-gray-600 mb-6">
             Let&apos;s discuss your ideas in detail. Schedule a meeting at your
             convenience.
           </p>

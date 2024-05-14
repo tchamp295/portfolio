@@ -61,7 +61,7 @@ const Service = () => {
         <h2 className="text-lg md:text-3xl font-bold text-gray-600 mb-4">
           Discover What I Offer
         </h2>
-        <p className="text-sm md:text-base text-gray-600 ">
+        <p className="text-base md:text-lg text-gray-600 ">
           Ready to turn your ideas into reality? Let&apos;s work together to
           bring your projects to life.
         </p>
@@ -69,7 +69,7 @@ const Service = () => {
 
       {/* Add your services section below */}
       <div className="border-t border-gray-300 pt-6">
-        <p className="text-sm md:text-base text-gray-600 mb-4">
+        <p className="text-base md:text-lg text-gray-600 mb-4">
           Here are some of the services I offer:
         </p>
         <div className="grid gap-6 md:grid-cols-2">
