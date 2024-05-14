@@ -79,7 +79,7 @@ const Service = () => {
               imgUrl={service.icon}
               title={service.title}
               desc={service.desc}
-              iconColor={service.iconColor}
+              iconColor={"#5c6ac4"}
             />
           ))}
         </div>

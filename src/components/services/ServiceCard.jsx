@@ -7,7 +7,7 @@ const ServiceCard = ({ imgUrl, title, desc, iconColor }) => {
             {imgUrl}
           </span>
         </div>
-        <h1 className=" text-lg md:text-xl font-bold text-gray-600 mb-2">{title}</h1>
+        <h1 className=" text-lg md:text-xl font-bold text-slate-400 mb-2">{title}</h1>
         <p className="text-base md:text-lg text-gray-600 ">{desc}</p>
       </div>
     </div>
