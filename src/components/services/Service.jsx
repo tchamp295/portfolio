@@ -31,7 +31,7 @@ const serviceData = [
       "Build robust and secure APIs to enable data exchange between applications.",
     iconColor: "#00FF00", // Green color for API Development
   },
- 
+
   {
     icon: <FaMoneyCheckAlt />,
     title: "Payment Integration",
@@ -44,7 +44,8 @@ const serviceData = [
     desc:
       "Develop custom Content Management Systems (CMS) for efficient content management.",
     iconColor: "#0000FF", // Blue color for CMS Development
-  }, {
+  },
+  {
     icon: <FaComments />,
     title: "Consultation",
     desc:
@@ -52,7 +53,6 @@ const serviceData = [
     iconColor: "#FF00FF", // Purple color for Consultation
   },
 ];
-
 
 const Service = () => {
   return (
@@ -78,8 +78,8 @@ const Service = () => {
               key={index}
               imgUrl={service.icon}
               title={service.title}
-                  desc={service.desc}
-                  iconColor={service.iconColor}
+              desc={service.desc}
+              iconColor={service.iconColor}
             />
           ))}
         </div>
