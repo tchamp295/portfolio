@@ -10,20 +10,24 @@ const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "TCMP is a platform that provides remote healthcare services. My team and I re-designed TCMP website and dashboard, we implemented new UI and features. We optimized the code and API to ensure an amazing user experience.",
+    description:
+      "TCMP is a platform that provides remote healthcare services. My team and I re-designed TCMP website and dashboard, we implemented new UI and features. We optimized the code and API to ensure an amazing user experience.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
+    stacks: ["React", "Next.js", "Express", "MongoDB"],
   },
   {
     id: 2,
     title: "Potography Portfolio Website",
-    description: "Website for The Saints Gathering Church with exciting features like downloadable sermons and devotionals. ",
+    description:
+      "Website for The Saints Gathering Church with exciting features like downloadable sermons and devotionals. ",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
+    stacks: ["React", "Next.js", "Express", "MongoDB"],
   },
   {
     id: 3,
@@ -33,6 +37,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
+    stacks: ["React", "Next.js", "Express", "MongoDB"],
   },
   {
     id: 4,
@@ -42,6 +47,7 @@ const projectsData = [
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
+    stacks: ["React", "Next.js", "Express", "MongoDB"],
   },
   {
     id: 5,
@@ -51,6 +57,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
+    stacks: ["React", "Next.js", "Express", "MongoDB"],
   },
   {
     id: 6,
@@ -60,36 +67,36 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
+    stacks: ["React", "Next.js", "Express", "MongoDB"],
   },
 ];
 const ProjectsSection = () => {
- 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-
- 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
   };
   return (
-    <div  className="  w-full max-w-3xl mx-auto px-3 py-7 my-9   ">
+    <div className="  w-full max-w-3xl mx-auto px-3 py-7 my-9   ">
       <div className=" flex  justify-between items-center mb-7">
         <h1 className=" text-lg md:text-3xl font-bold text-gray-600 ">
-               Featured Projects
+          Featured Projects
         </h1>
         <div className="">
-
-      
-          <Link href="#" className="flex items-center text-sm text-gray-600 hover:text-indigo-600 transition duration-300">
-              Explore More<IoMdArrowDropright className="h-5 w-5 ml-1" />
+          <Link
+            href="#"
+            className="flex items-center text-sm text-gray-600 hover:text-indigo-600 transition duration-300"
+          >
+            Explore More
+            <IoMdArrowDropright className="h-5 w-5 ml-1" />
           </Link>
         </div>
       </div>
-      
+
       <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
-        { projectsData.map((project, index) => (
+        {projectsData.map((project, index) => (
           <motion.li
             key={index}
             variants={cardVariants}
@@ -104,6 +111,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+             stacks={project.stacks}
             />
           </motion.li>
         ))}

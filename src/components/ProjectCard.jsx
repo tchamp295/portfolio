@@ -2,9 +2,16 @@ import React from "react";
 
 import Link from "next/link";
 import { AiOutlineEye } from "react-icons/ai";
-import { FaGithub } from "react-icons/fa";
+import { FaAngleRight, FaCode, FaGithub } from "react-icons/fa";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, stacks }) => {
+const ProjectCard = ({
+  imgUrl,
+  title,
+  description,
+  gitUrl,
+  previewUrl,
+  stacks,
+}) => {
   return (
     <div className="flex flex-col justify-between gap-4 w-full">
       <div
@@ -28,19 +35,17 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, stacks })
       </div>
       <div className="flex-auto rounded-b-xl mt-1 py-3">
         <h2 className="text-[16px] font-semibold">{title}</h2>
+       <div className="flex items-center gap-2 my-3">
+          <FaCode className="text-indigo-500 mr-1" /> 
+          <div className="text-slate-400 font-textt font-semibold text-sm">{stacks.join(", ")}</div>
+        </div>
         <p className="text-[#ADB7BE] text-sm">{description}</p>
-        <span>{ stacks}</span>
-      </div>
-      <div className="flex gap-6">
-        <Link className="px-3 py-1 border-2 rounded-lg" href="#">
-          <AiOutlineEye className="inline-block mr-1" />
-          Live
-        </Link>
-        <Link className="p-1 border-2 rounded-lg" href={gitUrl}>
-          <FaGithub className="inline-block mr-1" />
-          GitHub
+        <Link className="flex items-center text-indigo-500 hover:text-indigo-700 transition-colors duration-300" href={"/work/1"}>
+         Learn more... <FaAngleRight className="ml-1" />
         </Link>
       </div>
+      
+     
     </div>
   );
 };
