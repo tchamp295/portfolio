@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Calendly from "@/utils/Calendly";
 import { InlineWidget } from "react-calendly";
-import { FiCalendar } from "react-icons/fi";
+import { FiCalendar, FiCheckCircle } from "react-icons/fi";
 const ContactSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [showCalendly, setShowCalendly] = useState(false);
@@ -70,18 +70,46 @@ const ContactSection = () => {
             </button>
           </form>
         </div>
-       <div className="flex flex-col">
-      <p className="text-sm md:text-base text-gray-600 mb-6">
-        Let&apos;s discuss your ideas in detail. Schedule a meeting at your convenience.
-      </p>
-      <button
-        onClick={handleScheduleMeeting}
-        className=" w-full md:w-2/3 animate-pulse bg-transparent border border-indigo-600 text-indigo-600 font-bold py-2 px-4 rounded-md flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-105"
-      >
-        <FiCalendar className="mr-2" />
-        Schedule Now
-      </button>
-    </div>
+        <div className="flex flex-col">
+          <div className="pl-6 mb-3 text-sm md:text-base text-gray-600">
+            
+            <div className="flex items-center mb-2">
+              <FiCheckCircle className="text-indigo-600 mr-2" />
+              <span>3+ Years of experience</span>
+            </div>
+            <div className="flex items-center mb-2">
+              <FiCheckCircle className="text-indigo-600 mr-2" />
+              <span>Professional Web Development</span>
+            </div>
+            <div className="flex items-center mb-2">
+              <FiCheckCircle className="text-indigo-600 mr-2" />
+              <span>UI/UX Design</span>
+            </div>{" "}
+            <div className="flex items-center mb-2">
+              <FiCheckCircle className="text-indigo-600 mr-2" />
+              <span>API Development</span>
+            </div>
+            <div className="flex items-center mb-2">
+              <FiCheckCircle className="text-indigo-600 mr-2" />
+              <span>Payment Integration</span>
+            </div>
+            <div className="flex items-center mb-2">
+              <FiCheckCircle className="text-indigo-600 mr-2" />
+              <span>Consultation</span>
+            </div>
+          </div>
+          <p className="text-sm md:text-base text-gray-600 mb-6">
+            Let&apos;s discuss your ideas in detail. Schedule a meeting at your
+            convenience.
+          </p>
+          <button
+            onClick={handleScheduleMeeting}
+            className=" w-full md:w-2/3 animate-pulse bg-transparent border border-indigo-600 text-indigo-600 font-bold py-2 px-4 rounded-md flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-105"
+          >
+            <FiCalendar className="mr-2" />
+            Schedule Now
+          </button>
+        </div>
       </div>
 
       {showCalendly && (
