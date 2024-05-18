@@ -3,6 +3,8 @@ import "./globals.css";
 
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
+import { ToastProvider } from "@/lib/ToastProvider";
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        
+         <ToastProvider className='mt-5'/>
        <Navigation/>
         {children}
         <Footer />

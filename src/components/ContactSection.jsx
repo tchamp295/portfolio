@@ -1,12 +1,46 @@
 "use client";
 import React, { useState } from "react";
-import Calendly from "@/utils/Calendly";
+import { toast } from "react-hot-toast";
 import { InlineWidget } from "react-calendly";
 import { FiCalendar, FiCheckCircle } from "react-icons/fi";
 const ContactSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [showCalendly, setShowCalendly] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
+ const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    console.log("name: ", name);
+    console.log("Email: ", email);
+    console.log("Message: ", message);
+
+    try {
+      const res = await fetch("api/contact", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+      });
+
+   
+
+      if (res.ok) {
+
+        toast.success("Message sent successfully!");
+      } else {
+             toast.error("failed to send message !");
+      }
+    } catch (error) {
+      toast.error("An error occurred while sending the message.");
+    }
+  };
   const handleScheduleMeeting = () => {
     setShowCalendly(true); // Set the state to true to show Calendly
   };
@@ -26,14 +60,16 @@ const ContactSection = () => {
       </div>
       <div className="my-7 grid grid-cols-1 md:grid-cols-2 gap-8 ">
         <div className="">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <span className="block  font-medium text-base md:text-lg text-gray-600">
                 Name
               </span>
               <input
+                value={name}
                 type="name"
                 id="name"
+                onChange={(e) => setName(e.target.value)}
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-base"
                 placeholder="Enter your name"
               />
@@ -43,8 +79,10 @@ const ContactSection = () => {
                 Email
               </span>
               <input
+                value={email}
                 type="email"
                 id="email"
+                onChange={(e) => setEmail(e.target.value)}
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base"
                 placeholder="Enter your email"
               />
@@ -57,6 +95,8 @@ const ContactSection = () => {
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base"
                 name="message"
                 id="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 rows={5}
                 placeholder="Message"
               ></textarea>
@@ -72,7 +112,6 @@ const ContactSection = () => {
         </div>
         <div className="flex flex-col">
           <div className="pl-6 mb-3 text-base md:text-lg text-gray-600">
-            
             <div className="flex items-center mb-2">
               <FiCheckCircle className="text-indigo-600 mr-2" />
               <span>3+ Years of experience</span>

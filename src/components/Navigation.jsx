@@ -6,16 +6,11 @@ import { useState } from 'react';
 
 
 const Navigation = () => {
-  const [showNav, setShowNav] = useState(false);
 
-  const showNavHandler = () => {
-    setShowNav(true);
-  };
-
-  const closeNavHandler = () => {
-    setShowNav(false);
-  };
-
+ 
+const [showNav, setShowNav] = useState(false);
+  const showNavHandler = () => setShowNav(true);
+  const closeNavHandler = () => setShowNav(false);
   return (
     <>
       <NavMobile showNav={showNav} closeNav={closeNavHandler} />

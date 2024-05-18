@@ -7,14 +7,17 @@ import { FiLinkedin } from "react-icons/fi";
 import TypeEffect from "./hepler/TypeWriter";
 import { FaWhatsapp } from "react-icons/fa";
 const NavMobile = ({ closeNav, showNav }) => {
-  const NavOpenStyles = showNav ? "translate-x-0" : "translate-x-[-100%]";
+  const NavOpenStyles = showNav ? "translate-x-0" : "translate-x-[-100%]";  const handleNavItemClick = () => {
+    // Close the navigation menu when any link is clicked
+    closeNav();
+  };
   return (
     <div className="font-text">
       <div
         className={`fixed  top-0 transform ${NavOpenStyles} transition-all duration-500 z-[10000] left-0 right-0 bottom-0 bg-black opacity-70 w-[100vw] h-[100vh] `}
       ></div>
 
-      <ul
+      <ul onClick={handleNavItemClick}
         className={`text-white fixed  ${NavOpenStyles} flex px-5 py-20 flex-col    h-[100%] transform transition-all duration-300 delay-300 w-[80%] bg-gray-700 space-y-10 z-[10006] `}
       >
         <div className="font-bold text-3xl text-orange-500 flex items-center border-b border-gray-600 py-4">
@@ -75,7 +78,7 @@ const NavMobile = ({ closeNav, showNav }) => {
           </Link>
         </li>
         <li className="ml-5 ">
-          <Link
+          <Link 
             href={"/contact"}
             className=" text-slate-300 cursor-pointer hover:text-blue-500 "
           >

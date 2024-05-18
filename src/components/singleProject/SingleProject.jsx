@@ -1,4 +1,5 @@
-import Image from "next/image";
+import {projectsData} from "@/utils/data"
+import { FaAngleRight, FaCode, FaGithub } from "react-icons/fa";
 
 const SingleProject = () => {
   return (
@@ -10,7 +11,11 @@ const SingleProject = () => {
           </h2>
           <div className="">
                       <h1 className="mb-5 text-lg italic font-semibold text-slate-400">Featured Technologies</h1>
-                      Nextjs
+                    <div className="flex items-center gap-2 my-3">
+          <FaCode className="text-indigo-500 mr-1" /> 
+          <div className="text-slate-400 font-textt font-semibold text-base">{projectsData.project.stacks.join(", ")}</div>
+        </div>
+        
           </div>
         </div>
 

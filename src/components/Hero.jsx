@@ -3,8 +3,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowUpRight, Download } from "react-feather";
-import { IoMdContact, IoMdDownload } from "react-icons/io";
+
 
 import TypeEffect from "./hepler/TypeWriter";
 import Marquee from "react-fast-marquee";

@@ -4,7 +4,6 @@ import NavLink from "./NavLink";
 import { motion } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { SiGithub, SiLinktree, SiUpwork } from "react-icons/si";
-import { AiOutlineTwitter } from "react-icons/ai";
 import { FiLinkedin } from "react-icons/fi";
 
 import Link from "next/link";
@@ -14,6 +13,10 @@ const variants = {
   closed: { opacity: 0, x: "-100%" },
 };
 const navLinks = [
+  {
+    title: "home",
+    path: "/",
+  },
   {
     title: "about",
     path: "/about",
@@ -49,7 +52,7 @@ const Navbar = ({ openNav }) => {
   const stickyStyle = navSticky ? "bg-[#ffffff]  shadow-sm " : "#ffffff";
   return (
     <div
-      className={` fixed font-text top-0 w-full  ${stickyStyle} transition-all font-text duration-300  z-[10002]  `}
+      className={` fixed font-text top-0 w-full  ${stickyStyle} transition-all font-text duration-300  z-[1000]  `}
     >
       <div className=" flex items-center h-[10vh] justify-between max-w-3xl  mx-auto p-3">
         <div className=" flex items-center gap-4  ">
