@@ -9,12 +9,12 @@ const ContactSection = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
- const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log("name: ", name);
-    console.log("Email: ", email);
-    console.log("Message: ", message);
+    // console.log("name: ", name);
+    // console.log("Email: ", email);
+    // console.log("Message: ", message);
 
     try {
       const res = await fetch("api/contact", {
@@ -29,13 +29,13 @@ const ContactSection = () => {
         }),
       });
 
-   
-
       if (res.ok) {
-
+        setName("");
+        setEmail("");
+        setMessage("");
         toast.success("Message sent successfully!");
       } else {
-             toast.error("failed to send message !");
+        toast.error("failed to send message !");
       }
     } catch (error) {
       toast.error("An error occurred while sending the message.");
